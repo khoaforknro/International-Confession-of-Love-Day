@@ -103,7 +103,7 @@
         drawMatrix();
 
         function startVibrate() {
-            // Rung nhịp tim "bụp-bùm" mãi mãi
+            
             setInterval(() => {
                 if (navigator.vibrate) navigator.vibrate([100, 50, 150]);
             }, 800);
@@ -144,7 +144,7 @@
         function start() {
             if (!started && window.innerWidth > window.innerHeight) {
                 started = true;
-                audio.play(); // Nhạc phát 1 lần vì không có thuộc tính loop
+                audio.play(); 
                 runScript();
                 document.removeEventListener('click', start);
                 document.removeEventListener('touchstart', start);
